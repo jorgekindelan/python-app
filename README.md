@@ -1,34 +1,49 @@
-# Info
+# Currency Converter (Python + Flask)
 
-## Author Information
+**Author:** Juan Vicente Herrera Ruiz de Alejo  
+**GitHub:** [@juanviz](https://github.com/juanviz)  
+**Affiliation:** ICAI
 
-- **Name:** Juan Vicente Herrera Ruiz de Alejo
-- **GitHub:** [@juanviz](https://github.com/juanviz)
-- **Role:** Author and Maintainer
-- **Affiliation:** ICAI
+A lightweight Flask web application that converts an amount in euros to U.S. dollars using a simple web interface.
 
-## License
-This project is licensed under the MIT License - see the [MIT License](https://opensource.org/licenses/MIT) for details.
+## Overview
 
-# Conversor de Moneda
+This repository contains a small Flask app that:
 
-Esta es una sencilla aplicación en Python con Flask que convierte una cantidad de dinero en euros a dólares mediante una interfaz web.
+- Presents a web form where the user can enter an amount in euros
+- Converts the submitted value to U.S. dollars using a predefined conversion rate
+- Displays the converted result on the same page
 
-## Uso
-Ejecuta el servidor con:
+The code is intentionally minimal and easy to understand, making it a good starting point for learning Flask basics, form handling, and template rendering.
 
-```sh
-python currency_converter.py
-```
+## Project Structure
 
-Luego, abre tu navegador en `http://127.0.0.1:5000/` y usa la interfaz para realizar conversiones.
+- `currency_converter.py` – Main Flask application. Defines the web routes, handles form input, and performs the currency conversion.
+- `templates/index.html` – Jinja2 template for the web UI.
+- `requirements.txt` – Python dependencies required to run the app.
 
-## Instalación
-Para ejecutar la aplicación, instala las dependencias con:
+## Getting Started
+
+### 1) Install dependencies
 
 ```sh
 pip install -r requirements.txt
 ```
 
-## Licencia
-Este proyecto se distribuye bajo la licencia MIT.
+### 2) Run the app
+
+```sh
+python currency_converter.py
+```
+
+### 3) Open in your browser
+
+Visit `http://127.0.0.1:5000/` to access the currency converter interface.
+
+## Configuration
+
+The conversion rate is currently hard-coded in `currency_converter.py`. You can customize it by editing the `CONVERSION_RATE_EUR_TO_USD` constant.
+
+## License
+
+This project is licensed under the MIT License. See [MIT License](https://opensource.org/licenses/MIT) for details.
