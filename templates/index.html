@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor de Divisas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
     <style>
         body {
-            font-family: "Segoe UI", Arial, sans-serif;
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            font-family: "Inter", sans-serif;
+            background: linear-gradient(135deg, #244b87, #3a6bb3);
             margin: 0;
         }
 
         .navbar-custom {
-            background-color: rgba(255, 255, 255, 0.15);
+            background-color: rgba(0, 0, 0, 0.15);
             backdrop-filter: blur(6px);
         }
 
@@ -27,21 +28,40 @@
         .converter-card {
             border-radius: 20px;
             backdrop-filter: blur(10px);
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.96);
+            width: 400px;
+            max-width: 100%;
         }
 
         .result-box {
             font-size: 1.5rem;
             font-weight: bold;
-            color: #198754;
+            color: #157347;
         }
 
         .main-container {
             min-height: calc(100vh - 70px);
+            padding: 20px;
         }
 
         h2 {
             font-weight: 700;
+        }
+
+        .btn-primary {
+            background-color: #244b87;
+            border-color: #244b87;
+        }
+
+        .btn-primary:hover {
+            background-color: #1d3d6f;
+            border-color: #1d3d6f;
+        }
+
+        @media (max-width: 576px) {
+            .converter-card {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -59,7 +79,7 @@
     </nav>
 
     <div class="container d-flex justify-content-center align-items-center main-container">
-        <div class="card shadow-lg p-4 converter-card" style="width: 400px;">
+        <div class="card shadow-lg p-4 converter-card">
             <h2 class="text-center mb-4">Conversor de Divisas</h2>
 
             <form method="post">
